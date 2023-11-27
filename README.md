@@ -18,7 +18,7 @@ git clone https://github.com/mchl-schrdng/cubeguardian.git
 
 #### Config.yaml
 To use Cube Guardian, you need to create a config.yaml file.  
-This file stores essential configuration settings required for the application to function correctly.
+This file stores essential configuration settings required for the application to function correctly.  
 Example Configuration:
 ```bash
 api_url: "https://example-api-url.com"
