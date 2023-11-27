@@ -43,7 +43,7 @@ async def get_cube_metadata(session, api_url, api_token):
 
 async def test_cube(session, api_url, cube_details, api_token):
     headers = {'Authorization': f'Bearer {api_token}'}
-    query = {"measures": cube_details.get("measures", []), "dimensions": cube_details.get("dimensions", []), "limit": 0}
+    query = {"measures": cube_details.get("measures", []), "dimensions": cube_details.get("dimensions", []), "limit": 1}
     await http_request(session, 'POST', f"{api_url}/load", headers=headers, json={'query': query})
 
 async def test_dimension(session, api_url, cube_name, dimension, measure, api_token):
