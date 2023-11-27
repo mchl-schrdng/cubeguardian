@@ -42,3 +42,12 @@ jobs:
           # --fail-fast: Enable fail-fast mode to stop testing further dimensions on the first failure.
           # --cubes <list of cube names>: Specify a list of cube names to test. If not set, all cubes will be tested.
           # --concurrency <number>: Set the concurrency limit for testing. Default is 10.
+
+      - name: Check test result
+        run: |
+          if [[ "$TEST_RESULT" == *"failed"* ]]; then
+            echo "One or more cubes are in defect. Workflow failed."
+            exit 1
+          else
+            echo "All cubes passed. Workflow succeeded."
+          fi
