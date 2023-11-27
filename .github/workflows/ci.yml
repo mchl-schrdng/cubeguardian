@@ -51,3 +51,5 @@ jobs:
           else
             echo "All cubes passed. Workflow succeeded."
           fi
+          env:
+            TEST_RESULT: ${{ steps.build.outputs.stdout }}
