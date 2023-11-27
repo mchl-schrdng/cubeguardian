@@ -2,7 +2,7 @@
 <img src="img/icon.png" alt="Cube Guardian Logo" width="125" height="125"> A Python package for [cube](https://cube.dev/) validation and testing.
 
 ## Why this project was created
-- `The Challenge`: Cube validation methods are often slow and unscalable, leading to inefficiencies and errors in data-rich environments.  
+- `The Challenge`: Manual Cube validation methods are often slow and unscalable, leading to inefficiencies and errors in data-rich environments.  
 - `Our Solution`: Cube Guardian automates validation, using asynchronous programming for speed and efficiency.
 - `Use Cases`: Essential for data analysts and engineers in large-scale data warehouses needing accurate, consistent validation.  
 - `Vision`: Aiming to evolve Cube Guardian into a tool adept at complex validations, enhancing data analysis reliability.
