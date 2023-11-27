@@ -28,7 +28,7 @@ api_token: "your_api_token_here"
 #### Usage
 Cube Guardian can be run using the following command:
 ```bash
-python cubeguardian.py [options]
+python cubeguardian.py
 ```
 
 Options:
