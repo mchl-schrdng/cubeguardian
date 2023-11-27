@@ -10,7 +10,7 @@
 
 ### Getting Started
 To get started with Cube Guardian, you'll need to clone the GitHub repository to your local machine.  
-Open your terminal or command prompt and navigate to the directory where you want to store the Cube Guardian project.  
+Open your terminal and navigate to the directory where you want to store the Cube Guardian project.  
 Then, run the following command:
 ```bash
 git clone https://github.com/mchl-schrdng/cubeguardian.git
@@ -44,7 +44,7 @@ python cubeguardian.py --fail-fast --cubes cube1 cube2 --concurrency 5
 Below is a screenshot of the Cube Guardian in action, showing the output of a typical run:
 
 <img src="img/output.png" alt="Cube Guardian Results Screenshot" width="600">
-This screenshot demonstrates the output format and the detailed logging provided by Cube Guardian when running tests.
+This screenshot demonstrates the output provided by Cube Guardian when running tests.
 
 #### License
 This project is licensed under the MIT License, see the [LICENSE](https://github.com/mchl-schrdng/cubeguardian/blob/main/LICENSE.md) file for details.
