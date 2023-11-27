@@ -43,7 +43,7 @@ jobs:
           # --cubes <list of cube names>: Specify a list of cube names to test. If not set, all cubes will be tested.
           # --concurrency <number>: Set the concurrency limit for testing. Default is 10.
 
-      - name: Check test result
+      - name: Check test results
         run: |
           if [[ "$TEST_RESULT" == *"failed"* ]]; then
             echo "One or more cubes are in defect. Workflow failed."
@@ -51,5 +51,5 @@ jobs:
           else
             echo "All cubes passed. Workflow succeeded."
           fi
-          env:
-            TEST_RESULT: ${{ steps.build.outputs.stdout }}
+        env:
+          TEST_RESULT: ${{ steps.build.outputs.stdout }}
