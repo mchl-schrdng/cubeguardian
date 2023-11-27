@@ -1,8 +1,9 @@
+import argparse
 import asyncio
 import aiohttp
-import os
 import yaml
-import argparse
+import sys
+import os
 from loguru import logger
 
 class Style:
@@ -87,6 +88,13 @@ async def run_tests(api_url, api_token, concurrency_limit, specific_cubes=None, 
         await asyncio.gather(*tasks)
 
         log_summary(all_cubes_status, detailed_error_messages, start_time)
+
+        if any(status == 'failed' for status in all_cubes_status.values()):
+            logger.error("One or more cubes are in defect.")
+            sys.exit(1)
+        else:
+            logger.info("All cubes passed.")
+            sys.exit(0)
 
 def log_summary(all_cubes_status, detailed_error_messages, start_time):
     logger.info("=" * 100)
