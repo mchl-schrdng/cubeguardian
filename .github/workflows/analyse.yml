@@ -28,7 +28,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: test-summary
-          path: artifacts
+          path: artifacts/test-summary.json/
 
       - name: Run Analysis Script
         run: |
