@@ -1,7 +1,10 @@
 name: Cube Guardian Analysis
 
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Cube Guardian ci workflow"]
+    types:
+      - completed
 
 jobs:
   build:
